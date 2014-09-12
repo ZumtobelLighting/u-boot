@@ -322,6 +322,9 @@ config TARGET_SAMA5D3_XPLAINED
 config TARGET_SAMA5D3XEK
 	bool "Support sama5d3xek"
 
+config TARGET_GATEWAY3
+	bool "Support gateway3"
+
 config TARGET_BCM28155_AP
 	bool "Support bcm28155_ap"
 
