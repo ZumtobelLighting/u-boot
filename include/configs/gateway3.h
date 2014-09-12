@@ -40,10 +40,8 @@
 #define CONFIG_FIT
 
 /* watchdog */
-/*
 #define CONFIG_HW_WATCHDOG
 #define CONFIG_AT91SAM9_WATCHDOG
-*/
 
 /* general purpose I/O */
 #define CONFIG_AT91_GPIO
