@@ -153,7 +153,7 @@
 #define CONFIG_CMD_UBIFS
 
 #define MTDIDS_DEFAULT "nand0=atmel_nand"
-#define MTDPARTS_DEFAULT "mtdparts=atmel_nand:-(rootfs)"
+#define MTDPARTS_DEFAULT "mtdparts=atmel_nand:6M(kernel)ro,-(rootfs)"
 #endif
 
 /* Ethernet Hardware */
@@ -254,8 +254,9 @@
 #else
 #define CONFIG_BOOTARGS							\
   "console=ttyS0,115200 "						\
-  "mtdparts=atmel_nand:-(rootfs) "					\
-  "rootfstype=ubifs ubi.mtd=0 root=ubi0:rootfs"
+  "mtdparts=atmel_nand:6M(rescue_kernel)ro,-(rootfs),"			\
+  "m25p80:64k(bootloader)ro,64k(env),64k(dtb)ro,-(uboot)ro "		\
+  "rootfstype=ubifs ubi.mtd=1 root=ubi0:rootfs"
 #endif
 
 #define CONFIG_BAUDRATE			115200
