@@ -254,8 +254,8 @@
 #else
 #define CONFIG_BOOTARGS							\
   "console=ttyS0,115200 "						\
-  "mtdparts=atmel_nand:6M(rescue_kernel)ro,-(rootfs),"			\
-  "m25p80:64k(bootloader)ro,64k(env),64k(dtb)ro,-(uboot)ro "		\
+  "mtdparts=atmel_nand:6M(rescue_kernel)ro,-(rootfs);"			\
+  "spi32766.0:64k(bootloader)ro,64k(env),64k(dtb)ro,-(uboot)ro "	\
   "rootfstype=ubifs ubi.mtd=1 root=ubi0:rootfs"
 #endif
 
