@@ -249,6 +249,7 @@ int board_init(void)
 	if (has_lcdc())
 		sama5d3xek_lcd_hw_init();
 #endif
+	at91_set_pio_output(AT91_PIO_PORTA, 0, 1);
 	return 0;
 }
 
