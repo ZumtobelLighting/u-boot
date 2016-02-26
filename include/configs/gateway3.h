@@ -15,6 +15,7 @@
 
 #include <asm/hardware.h>
 
+#define CONFIG_ENV_OVERWRITE 1
 #define CONFIG_SYS_TEXT_BASE		0x26f00000
 
 /* ARM asynchronous clock */
