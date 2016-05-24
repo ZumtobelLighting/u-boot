@@ -18,7 +18,7 @@
  * before the common header.
  */
 #define CONFIG_ENV_OVERWRITE 1
-#define CONFIG_SYS_NO_FLASH
+
 #include "at91-sama5_common.h"
 
 #define CONFIG_BOARD_LATE_INIT
